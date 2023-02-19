@@ -2,112 +2,115 @@
 
 # ⏳ Lai Todo
 
-Free, modern and open-source timer application, right in your Mac.
+免费、现代和开源的计时器应用程序，就在您的 Mac 中。
 
-![Screenshot of the application showing a work section.](./public/assets/img/ProductImg_Default.png)
+![显示工作部分的应用程序屏幕截图。](./public/assets/img/ProductImg_Default.png)
 
-## What is it?
+## 它是什么？
 
-_Lai Todo_ is a Pomodoro timer application running in the browser. It helps you manage your time so that you can do more work instead of watching videos of cute cats 😿
+*Lai Todo*是一款运行在浏览器中的番茄钟应用。 它可以帮助您管理时间，这样您就可以做更多的工作而不是看可爱猫咪的视频 😿
 
-## What you get
+## 你得到什么
 
-Here's the looong list of features this app includes.
+这是此应用程序包含的功能列表。
 
-### ⏰ **Multiple timer styles**
+### ⏰ **多种计时器样式**
 
-- (12:34) _traditional_ <br> a classic one with second-precision for those who want to know exactly how much time is left until coffee break
-- (12 minutes) _approximate_ <br> this one displays time with minute-precision so you know how much time is left but your eyes won't stick to the counter since it does not change every second
-- (50%) _percentage_ <br> being even less informative, this one keeps you away from the distraction of calculating "what can I do in the remaining 12 minutes and 34 seconds?".
+- (12:34) _traditional_ <br>
+  对于那些想确切知道喝咖啡休息时间还剩多少时间的人来说，具有秒精度的经典方法
+- (12 分钟）_approximate_ <br>
+  这个以分钟精度显示时间，因此您知道还剩多少时间，但您的眼睛不会盯着计数器，因为它不会每秒都在变化
+- (50%) _percentage_ <br>
+  信息量更少，这个可以让您远离计算“在剩余的 12 分 34 秒内我能做什么？”的分心。
 
-### 💡 **Friendly, focused and clean user interface**
+### 💡 **友好、专注和干净的用户界面**
 
-**It's just the essentials**: a timer in the middle and controls at the bottom. Everything else can be turned off:
+**这只是必需品**：中间的计时器和底部的控件。 其他一切都可以关闭：
 
-- a quick glance at your schedule at the top
-- a smart to-do list
-- colour-coded sections
-- colourful progress bar in the background
+- 在顶部快速浏览您的日程安排
+- 智能待办事项清单
+- 颜色编码的部分
+- 背景中的彩色进度条
 
-### 📑 **Flexible schedule**
+### 📑 **灵活的时间表**
 
-- adjust the length of your sessions separately or use one of the built-in presets
-- set how frequent long pauses are
-- **track the time spent beyond the timer**, unlike other timers that stop when the time expires
+- 单独调整会话长度或使用内置预设之一
+- 设置长时间停顿的频率
+- **跟踪超出计时器的时间**，不像其他计时器在时间到期时停止
 
-### 🎵 **Multiple ways to notify you**
+### 🎵 **多种方式通知您**
 
-- play sounds when you finish a section
-- desktop notifications so you don't have to keep checking your browser
+- 完成一个部分时播放声音
+- 桌面通知，这样你就不必一直检查你的浏览器
 
-### ⚙ **Plenty of options**
+### ⚙ **很多选项**
 
-- set your schedule the way you want it
-- toggle the schedule view, the progress bar or the to-do list
-- enable/disable audio and/or desktop notifications
-- change the number of schedule items shown
-- control your timer using the keyboard
-- dark and light themes
-- ... and more to come in the future!
+- 按照您想要的方式设置您的日程安排
+- 切换日程视图、进度条或待办事项列表
+- 启用/禁用音频和/或桌面通知
+- 更改显示的计划项目数
+- 使用键盘控制你的计时器
+- 深色和浅色主题
+- ……未来还会有更多！
 
-### ✅ **Clean to-do list**
+### ✅ **清洁待办事项**
 
-- set separate tasks for work, pause and long pause sections
-- only shows your top relevant tasks while the timer is running
-- automatically remove completed tasks at the end of each session
-- remembers your tasks across sessions
+- 为工作、暂停和长时间暂停部分设置单独的任务
+- 仅在计时器运行时显示与您最相关的任务
+- 在每个会话结束时自动删除已完成的任务
+- 记住你跨会话的任务
 
-### ✨ **Other nice-to-have features**
+### ✨ **其他值得拥有的功能**
 
-- remembers your settings
-- it's a _PWA_ (Progressive Web App): it's fast and you can install it through your browser!
-- fancy and fluid animations
-- setup wizard to get you started
-- translated into 5 languages
+- 记住您的设置
+- 这是一个 _PWA_（渐进式 Web 应用程序）：速度很快，您可以通过浏览器安装它！
+- 精美流畅的动画
+- 设置向导让你开始
+- 翻译成 5 种语言
 
-### ✔ **No installation required**.
+### ✔ **超级轻量**
 
-Just open the webpage and enjoy it! You can even self-host it!
+仅仅 5.6M。
 
-### 👋 **Open development**
+### 👋 **开放开发**
 
-Anyone can view the source code, raise issues (feature requests, bug reports) or even submit their own improvements!
+任何人都可以查看源代码、提出问题（功能请求、错误报告）甚至提交他们自己的改进！
 
-## 🖼 More screenshots
+## 🖼 更多截图
 
-![The display section of the settings panel](./public/assets/img/ProductImg_Settings.png)
+![设置面板的显示部分](./public/assets/img/ProductImg_Settings.png)
 
-![The traditional timer with the to-do panel open](./public/assets/img/ProductImg_TodoOpen.png)
+![打开待办事项面板的传统计时器](./public/assets/img/ProductImg_TodoOpen.png)
 
-## 🏗 If you're a developer
+## 🏗 如果您是开发人员
 
-This is an open-source project that welcomes contributions. Please check the [**contribution guidelines**](./CONTRIBUTING.md) before opening issues, discussions or pull requests!
+这是一个欢迎贡献的开源项目。 在打开问题、讨论或请求请求之前，请检查 [**贡献指南**](./CONTRIBUTING.md)！
 
-### ❤ Technologies, packages used
+### ❤ 技术，使用的包
 
-- [**NuxtJS**](https://nuxtjs.org/) (and thus [**VueJS**](https://vuejs.org/))
-  - [`vue-i18n`](https://kazupon.github.io/vue-i18n/) for localization
-  - [`nuxt/google-fonts`](https://github.com/nuxt-community/google-fonts-module) for Google Fonts support
-  - [`Pinia`](https://pinia.vuejs.org/) for state management
+- [**NuxtJS**](https://nuxtjs.org/)（ [**VueJS**](https://vuejs.org/)）
+  - [`vue-i18n`](https://kazupon.github.io/vue-i18n/) 用于本地化
+  - [`nuxt/google-fonts`](https://github.com/nuxt-community/google-fonts-module) 支持谷歌字体
+  - [`Pinia`](https://pinia.vuejs.org/) 用于状态管理
 - [**Tailwind CSS**](https://tailwindcss.com/)
-- [Tabler Icons](https://tabler-icons.io/) through [`vue-tabler-icons`](https://github.com/alex-oleshkevich/vue-tabler-icons)
-- [Workbox](https://github.com/GoogleChrome/workbox) as a PWA service worker
-- [`conventional-changelog/standard-version`](https://github.com/conventional-changelog/standard-version) for automatic changelog generation from [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
-- [Tauri](https://tauri.app/) as substrate in desktop.
+- [Tabler Icons](https://tabler-icons.io/) 通过 [`vue-tabler-icons`](https://github.com/alex-oleshkevich/vue-tabler-icons)
+- [Workbox](https://github.com/GoogleChrome/workbox) 作为 PWA service worker
+- [`conventional-changelog/standard-version`](https://github.com/conventional-changelog/standard-version) 用于从[常规提交](https://www.conventionalcommits.org/en) 自动生成变更日志 /v1.0.0/)
+- [Tauri](https://tauri.app/) 作为桌面的底层。
 
-### 🛠 Building or running the app yourself
+### 🛠 自己构建或运行应用程序
 
-```bash
-# install dependencies
+```狂欢
+# 安装依赖
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# 启动应用，并且支持热重载
 $ yarn tauri:dev
 
-# generate the final static site
+# 生成应用
 $ yarn tauri:build
 ```
 
-## ☕ Support the project
+## ☕ 支持项目
 
-If you like this project or it has helped you, please consider to star 🌟. You won't be annoyed to do so while using the app!
+如果您喜欢这个项目或者对您有帮助，请考虑 star🌟。 使用该应用程序时，您不会因为这样做而烦恼！

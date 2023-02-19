@@ -65,9 +65,9 @@ Here's the looong list of features this app includes.
 - setup wizard to get you started
 - translated into 5 languages
 
-### ✔ **No installation required**.
+### ✔ **Super lightweight**
 
-Just open the webpage and enjoy it! You can even self-host it!
+Only 5.6M.
 
 ### 👋 **Open development**
 
@@ -101,10 +101,10 @@ This is an open-source project that welcomes contributions. Please check the [**
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at app
 $ yarn tauri:dev
 
-# generate the final static site
+# generate application
 $ yarn tauri:build
 ```
 

@@ -7,12 +7,23 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "lai-todo",
+    "productName": "Lai Todo",
     "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": false,
+      "window": {
+        "all": false,
+        "close": true,
+        "hide": true,
+        "show": true,
+        "maximize": true,
+        "minimize": true,
+        "unmaximize": true,
+        "unminimize": true,
+        "startDragging": true
+      }
     },
     "bundle": {
       "active": true,
@@ -23,13 +34,13 @@
       },
       "externalBin": [],
       "icon": [
-        "icons/32x32.png",
-        "icons/128x128.png",
-        "icons/128x128@2x.png",
-        "icons/icon.icns",
-        "icons/icon.ico"
+        "icons/lai-todo-32-v1.png",
+        "icons/lai-todo-128-v1.png",
+        "icons/lai-todo-128-v1@2x.png",
+        "icons/lai-todo-128-v1@2x.icns",
+        "icons/lai-todo-32-v1.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.lai-todo.com",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -57,9 +68,13 @@
       {
         "fullscreen": false,
         "height": 600,
+        "width": 800,
+        "minHeight": 500,
+        "minWidth": 400,
         "resizable": true,
         "title": "Lai Todo",
-        "width": 800
+        "titleBarStyle": "Visible",
+        "hiddenTitle": true
       }
     ]
   }

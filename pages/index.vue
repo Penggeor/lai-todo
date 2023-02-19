@@ -84,9 +84,7 @@ const progressBarSchedules = computed(() => {
 </script>
 
 <template>
-  <section
-    class="h-full overflow-hidden duration-300 ease-in dark:text-gray-50"
-  >
+  <section class="h-full overflow-hidden duration-300 ease-in dark:text-gray-50">
     <Title>{{ (remainingTimeString ? `(${remainingTimeString}) ` : '') + pageTitle }}</Title>
 
     <!-- Dark mode background override -->
@@ -155,6 +153,7 @@ const progressBarSchedules = computed(() => {
 .progress-transition-enter {
   @apply transform-gpu -translate-x-full;
 }
+
 </style>
 
 <style>

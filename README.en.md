@@ -1,4 +1,4 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](./README.en.md)
+[![zh](https://img.shields.io/badge/lang-zh-red.svg)](./README.md)
 
 # ⏳ Lai Todo
 

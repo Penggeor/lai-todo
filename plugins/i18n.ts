@@ -9,6 +9,10 @@ import { PiniaPluginContext } from 'pinia'
 import messages from '@intlify/unplugin-vue-i18n/messages'
 
 export const languages = {
+  zh: {
+    name: '中文',
+    iso: 'zh-CN'
+  },
   en: {
     name: 'English',
     iso: 'en-US'
@@ -85,7 +89,9 @@ export default defineNuxtPlugin(({ vueApp, $pinia }) => {
   return {
     provide: {
       setLocale: changeLocaleDynamic,
-      languages: (Object.keys(languages) as Array<keyof typeof languages>).reduce((prev, lang) => {
+      languages: (
+        Object.keys(languages) as Array<keyof typeof languages>
+      ).reduce((prev, lang) => {
         prev[lang] = languages[lang].name
         return prev
       }, {} as Record<keyof typeof languages, string>)

@@ -5,5 +5,7 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  }
+  },
+  "i18n-ally.localesPaths": ["i18n"],
+  "i18n-ally.keystyle": "nested"
 }

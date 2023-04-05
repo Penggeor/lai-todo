@@ -51,10 +51,10 @@
     },
     "scheduleMinTime": "El tiempo mínimo permitido es de 5 segundos",
     "about": {
-      "madeby": "Hecho por Imre Gera",
+      "madeby": "Hecho por Pandy",
       "source": "Código fuente",
       "support": "Apoye el proyecto",
-      "supportBody": "Desarrollo FocusTide en mi tiempo libre. ¡Significaría mucho para mí si pudiera ayudarme a seguir trabajando en él!",
+      "supportBody": "Desarrollo LAI TODO en mi tiempo libre. ¡Significaría mucho para mí si pudiera ayudarme a seguir trabajando en él!",
       "mobileSupport": "Debido a las reglas impuestas por la Google Play Store, no puedo mostrarle ningún enlace dentro de la aplicación móvil para donar al proyecto.",
       "share": "o comparta la aplicación en redes sociales:"
     },
@@ -296,7 +296,7 @@
     "onboarding": {
       "pages": {
         "0": {
-          "title": "¡Bienvenido/a FocusTide!",
+          "title": "¡Bienvenido/a LAI TODO!",
           "text": "Eche un vistazo a cómo utilizar la aplicación de forma eficaz."
         },
         "1": {
@@ -313,7 +313,7 @@
         },
         "support": {
           "title": "Apoye el proyecto",
-          "text": "Si este proyecto te ha ayudado, considera invitar al autor un café. También puede encontrar el botón de apoyo en el menú de ajustes."
+          "text": "Si este proyecto te ha sido útil, por favor considera darle una estrella en GitHub."
         }
       },
       "buttons": {

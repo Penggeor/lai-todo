@@ -1,0 +1,347 @@
+{
+  "support": {
+    "source": "在 GitHub 上查看",
+    "support": "给作者买一杯咖啡",
+    "share": {
+      "twitter": "在 Twitter 上关注该应用",
+      "facebook": "在 Facebook 上分享该应用",
+      "reddit": "在 Reddit 上分享该应用"
+    }
+  },
+  "section": {
+    "work": "工作",
+    "shortpause": "休息",
+    "longpause": "长时间休息",
+    "wait": "等待"
+  },
+  "controls": {
+    "play": "启动或暂停计时器",
+    "stop": "重置计时器",
+    "advance": "转到下一部分"
+  },
+  "appbar": {
+    "settings": "打开设置",
+    "todo": "打开任务列表"
+  },
+  "timer": {
+    "approximate": {
+      "hours": "小时 | 小时",
+      "minutes": "分钟 | 分钟"
+    }
+  },
+  "settings": {
+    "heading": "设置",
+    "tabs": {
+      "main": "主要",
+      "timer": "计划",
+      "display": "显示",
+      "audio": "音频",
+      "about": "关于"
+    },
+    "buttons": {
+      "close": "关闭",
+      "reset": "重置"
+    },
+    "reset": {
+      "title": "重置设置",
+      "confirm": "重置",
+      "cancel": "取消"
+    },
+    "manage": {
+      "buttons": {
+        "save": "保存",
+        "load": "加载"
+      }
+    },
+    "scheduleMinTime": "允许的最小时间为5秒",
+    "about": {
+      "madeby": "由 Pandy 制作",
+      "source": "源代码",
+      "support": "支持项目",
+      "supportBody": "我在业余时间开发 LAI TODO。如果您能帮助我继续开发它，我会非常感激！",
+      "mobileSupport": "由于 Google Play 商店的规定，我无法在手机应用中显示任何捐赠给项目的链接。",
+      "share": "或在社交媒体上分享应用："
+    },
+    "values": {
+      "manage": {
+        "_title": "管理设置",
+        "_description": "下载当前设置或从文件加载"
+      },
+      "mobile": {
+        "notifications": {
+          "sectionOver": {
+            "_title": "部分结束通知",
+            "_description": "当某部分结束时显示通知"
+          },
+          "persistent": {
+            "_title": "持续通知",
+            "_description": "显示当前计时器的进度"
+          }
+        }
+      },
+      "lang": {
+        "_title": "语言",
+        "_description": ""
+      },
+      "eventLoggingEnabled": {
+        "_title": "启用事件记录",
+        "_description": ""
+      },
+      "currentTimer": {
+        "_title": "计时器样式",
+        "_description": "",
+        "_values": {
+          "traditional": "传统",
+          "approximate": "大致",
+          "percentage": "百分比"
+        },
+        "_valueDescription": {
+          "traditional": "12:34",
+          "approximate": "13分钟",
+          "percentage": "50%"
+        }
+      },
+      "adaptiveTicking": {
+        "enabled": {
+          "_title": "启用自适应滴答声",
+          "_description": "计时器在后台时滴答声频率较低"
+        }
+      },
+      "schedule": {
+        "longPauseInterval": {
+          "_title": "长休息间隔",
+          "_description": ""
+        },
+        "numScheduleEntries": {
+          "_title": "计划条目数量",
+          "_description": ""
+        },
+        "visibility": {
+          "enabled": {
+            "_title": "显示计划",
+            "_description": ""
+          },
+          "showSectionType": {
+            "_title": "在计划中显示部分类型",
+            "_description": "在计划下方显示当前部分类型"
+          }
+        },
+        "lengths": {
+          "_title": "计划预设",
+          "_description": "",
+          "_values": {
+            "default": "默认",
+            "debug": "调试",
+            "custom": "自定义"
+          },
+          "_valueDescription": {
+            "default": "25分钟工作，5分钟休息",
+            "debug": "用于调试目的",
+            "custom": "由您设置"
+          },
+          "work": {
+            "_title": "工作",
+            "_description": ""
+          },
+          "shortpause": {
+            "_title": "休息",
+            "_description": ""
+          },
+          "longpause": {
+            "_title": "长休息",
+            "_description": ""
+          }
+        }
+      },
+      "performance": {
+        "showProgressBar": {
+          "_title": "显示进度条",
+          "_description": "在计时器后面显示进度"
+        }
+      },
+      "permissions": {
+        "audio": {
+          "_title": "播放音频",
+          "_description": "当某部分结束时，让应用播放声音"
+        },
+        "notifications": {
+          "_title": "通知权限",
+          "_description": "当某部分结束时，让应用向您发送通知"
+        }
+      },
+      "audio": {
+        "volume": {
+          "_title": "音频音量",
+          "_description": ""
+        },
+        "soundSet": {
+          "_title": "声音设置",
+          "_description": "用于通知的声音",
+          "_values": {
+            "musical": "音乐性"
+          },
+          "_valueDescription": {
+            "musical": "默认声音"
+          }
+        }
+      },
+      "timerControls": {
+        "enableKeyboardShortcuts": {
+          "_title": "启用键盘快捷键",
+          "_description": "用空格键启动/暂停计时器"
+        }
+      },
+      "tasks": {
+        "enabled": {
+          "_title": "启用任务列表",
+          "_description": "直接在应用中管理您的工作"
+        },
+        "maxActiveTasks": {
+          "_title": "最多显示活动任务",
+          "_description": "最多只能看到这么多活动任务"
+        },
+        "removeCompletedTasks": {
+          "_title": "删除已完成任务",
+          "_description": "在新部分开始时删除已完成任务"
+        }
+      },
+      "pageTitle": {
+        "useTickEmoji": {
+          "_title": "在标题中使用勾选表情符号",
+          "_description": "显示✔而不是'完成'"
+        }
+      },
+      "visuals": {
+        "darkMode": {
+          "_title": "启用深色模式",
+          "_description": "不那么明亮，但同样高效"
+        }
+      },
+      "reset": {
+        "_title": "重置设置",
+        "_description": "在应用重新加载后，所有设置将被重置"
+      }
+    }
+  },
+  "notification": {
+    "action": {
+      "ready": "开始吧！"
+    },
+    "work": {
+      "title": "回到工作吧！",
+      "body": "休息结束了。再工作一会儿，然后再休息。"
+    },
+    "shortpause": {
+      "title": "休息一下",
+      "body": "好样的，你赚到了一个短暂的休息。"
+    },
+    "longpause": {
+      "title": "哇！更多的闲暇时间！",
+      "body": "好吧，工作了这么久，你应该享受一个更长的休息。"
+    }
+  },
+  "error": {
+    "format_invalid": "输入格式无效",
+    "range_invalid": "数值必须在 {min} 和 {max} 之间",
+    "required": "此字段必须填写",
+    "numeric": "数值必须是数字",
+    "min": "数值必须至少为 {min}",
+    "max": "数值必须至多为 {max}",
+    "time_format": "时间格式错误 (MM:SS)",
+    "min_time": "输入的时间太短",
+    "undefined": "未定义错误"
+  },
+  "tasks": {
+    "title": "任务",
+    "empty": "还没有任务",
+    "manage": "管理",
+    "addPlaceholder": "输入需要完成的事情"
+  },
+  "ready": "完成",
+  "errorpage": {
+    "title": {
+      "crash": "应用崩溃了",
+      "notfound": "该页面不存在",
+      "other": "出了点问题"
+    },
+    "action": {
+      "reset": "重置应用",
+      "reload": "重新加载页面",
+      "home": "返回主页",
+      "githubIssue": "提交一个错误报告",
+      "githubDiscussion": "询问其他人是否遇到相同问题",
+      "twitter": "写一条友好的推文"
+    },
+    "showError": {
+      "main": "展示错误信息！",
+      "sub": "我会用它来报告问题，或者问问别人是否也遇到过。"
+    },
+    "suggestions": {
+      "primary": "你可以",
+      "secondary": "或者，如果以上方法没有帮助"
+    }
+  },
+  "timerpreset": {
+    "_values": {
+      "default": "默认",
+      "easy": "初学者",
+      "advanced": "高级",
+      "workaholic": "工作狂"
+    },
+    "_valueDescription": {
+      "default": "默认的番茄工作法数值。",
+      "easy": "对于那些还没有尝试过番茄工作法的人。",
+      "advanced": "稍微更有效地工作。",
+      "workaholic": "进行长时间的工作会话。"
+    },
+    "description": "{brief} \n {worklength} 分钟的工作，伴随着 {splength} 分钟的短暂休息和每 {lpfreq} 个工作阶段后的 {lplength} 分钟长休息。"
+  },
+  "tutorials": {
+    "onboarding": {
+      "pages": {
+        "0": {
+          "title": "欢迎来到 LAI TODO！",
+          "onboarding_invite": "让我们首次为您设置。您以后可以在设置菜单中更改所有内容。",
+          "heading": "选择您的语言"
+        },
+        "1": {
+          "heading": "设置您的计时器",
+          "text": "选择一个预定义的计时器长度设置。您可以稍后在设置中自定义它们。"
+        },
+        "2": {
+          "theme": {
+            "heading": "选择一个主题",
+            "options": {
+              "_values": {
+                "light": "浅色",
+                "dark": "深色"
+              },
+              "_valueDescription": {
+                "light": "",
+                "dark": ""
+              }
+            }
+          },
+          "display": {
+            "heading": "选择一个显示"
+          }
+        },
+        "3": {
+          "heading": "请记住",
+          "text": "您可以随时在设置菜单中更改这些（以及更多）内容！"
+        },
+        "support": {
+          "heading": "支持项目",
+          "text": "如果这个项目对你有帮助，请考虑在 GitHub 上给它一颗 Star。",
+          "hint": "您还可以在 设置>关于 页面中找到支持选项。"
+        }
+      },
+      "buttons": {
+        "close": "关闭",
+        "start": "开始设置",
+        "next": "下一步",
+        "support": "支持项目"
+      }
+    }
+  }
+}

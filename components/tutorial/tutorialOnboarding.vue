@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { open } from '@tauri-apps/api/shell'
 import { ButtonImportance, ButtonTheme } from '../base/types/button'
 import Button from '~~/components/base/uiButton.vue'
 import PopupSheet from '@/components/base/popupSheet.vue'
@@ -40,13 +41,14 @@ const state = reactive({
         </Button>
         <Button
           v-else-if="state.page === 4"
-          link
           href="https://www.buymeacoffee.com/imreg?utm_source=focustide&utm_medium=cta&utm_campaign=onboarding"
-          target="_blank"
           :importance="ButtonImportance.Filled"
           :theme="ButtonTheme.Secondary"
           class="flex-grow w-full"
-          @click="$emit('close')"
+          @click="() => {
+            open('https://github.com/Penggeor/lai-todo')
+            $emit('close')
+          }"
         >
           {{ $t('tutorials.onboarding.buttons.support') }}
         </Button>

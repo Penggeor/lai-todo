@@ -55,10 +55,10 @@
     },
     "scheduleMinTime": "A legrövidebb megengedett időtartam 5 másodperc",
     "about": {
-      "madeby": "Készítette: Gera Imre",
+      "madeby": "Készítette: Gera Pandy",
       "source": "Forráskód",
       "support": "Támogasd a projektet",
-      "supportBody": "A FocusTide-ot a szabadidőmben fejlesztem, nagyon sokat jelentene, ha segítenél továbbfejleszteni!",
+      "supportBody": "A LAI TODO-ot a szabadidőmben fejlesztem, nagyon sokat jelentene, ha segítenél továbbfejleszteni!",
       "mobileSupport": "A Google Play áruház szabályai miatt nem jeleníthetek meg semmilyen hivatkozást az anyagi támogatáshoz.",
       "share": "vagy oszd meg ismerőseiddel az alkalmazást:"
     },
@@ -300,7 +300,7 @@
     "onboarding": {
       "pages": {
         "0": {
-          "title": "Üdvözöl a FocusTide!",
+          "title": "Üdvözöl a LAI TODO!",
           "onboarding_invite": "Itt beállíthatod az alkalmazást az első használatra. Később mindent megváltoztathatsz a beállításokban.",
           "heading": "Válassz nyelvet"
         },
@@ -332,7 +332,7 @@
         },
         "support": {
           "heading": "Támogasd a projektet",
-          "text": "Ha ez a projekt segít neked, hívd meg a fejlesztőt egy kávéra.",
+          "text": "Ha ez a projekt segített neked, fontolja meg, hogy adjon neki egy csillagot a GitHubon.",
           "hint": "A támogatási lehetőségeket megtalálod a Beállítások > Névjegy fülön is."
         }
       },

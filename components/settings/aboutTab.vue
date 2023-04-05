@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { CoffeeIcon, BrandGithubIcon, BrandTwitterIcon, BrandFacebookIcon, BrandRedditIcon } from 'vue-tabler-icons'
+import { open } from '@tauri-apps/api/shell'
 import { ButtonImportance } from '../base/types/button'
 import Button from '~~/components/base/uiButton.vue'
 import { AppPlatform } from '~~/platforms/platforms'
@@ -15,7 +16,7 @@ const mainStore = useMain()
     <img src="/favicon.svg" width="64" height="64" class="inline-block p-2 mb-1 bg-red-200 rounded-lg">
     <div>
       <div class="inline-block text-2xl font-bold">
-        FocusTide
+        LAI TODO
       </div>
       <sup class="text-base" v-text="mainStore.version" />
     </div>
@@ -23,7 +24,7 @@ const mainStore = useMain()
 
     <div class="flex flex-col items-center justify-center mt-8 text-center">
       <div class="mb-2">
-        <span v-text="$t('settings.about.supportBody')" /> <span class="italic">&mdash; Imre</span>
+        <span v-text="$t('settings.about.supportBody')" /> <span class="italic">&mdash; Pandy</span>
       </div>
       <div v-if="isMobile" class="px-4 my-2 text-sm" v-text="$t('settings.about.mobileSupport')" />
 
@@ -32,17 +33,16 @@ const mainStore = useMain()
         <Button
           :importance="ButtonImportance.Filled"
           dark
-          link
           no-default-style
           no-content-theme
-          href="https://www.github.com/Hanziness/FocusTide?utm_source=FocusTide&utm_medium=web&utm_content=settings"
           inner-class="flex flex-row items-center gap-1 text-slate-50 text-gray-50"
           bg-class="bg-slate-900 dark:bg-slate-700"
+          @click="open('https://github.com/Penggeor/lai-todo')"
         >
           <BrandGithubIcon />
           <span v-text="$t('settings.about.source')" />
         </Button>
-        <Button
+        <!-- <Button
           v-if="!isMobile"
           :importance="ButtonImportance.Filled"
           link
@@ -65,10 +65,10 @@ const mainStore = useMain()
         >
           <CoffeeIcon />
           <span v-text="$t('settings.about.support')" />
-        </Button>
+        </Button> -->
       </div>
       <!-- Share links -->
-      <div class="my-2" v-text="$t('settings.about.share')" />
+      <!-- <div class="my-2" v-text="$t('settings.about.share')" />
       <div class="flex flex-row items-center space-x-2 text-sm">
         <Button
           link
@@ -109,7 +109,7 @@ const mainStore = useMain()
         >
           <BrandRedditIcon :aria-label="$t('support.share.reddit')" size="24" />
         </Button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "Lai Todo",
+    "productName": "LAI TODO",
     "version": "0.1.0"
   },
   "tauri": {
@@ -23,6 +23,13 @@
         "unmaximize": true,
         "unminimize": true,
         "startDragging": true
+      },
+      "shell": {
+        "all": false,
+        "execute": false,
+        "open": true,
+        "scope": [],
+        "sidecar": false
       }
     },
     "bundle": {
@@ -34,11 +41,17 @@
       },
       "externalBin": [],
       "icon": [
-        "icons/lai-todo-32-v1.png",
-        "icons/lai-todo-128-v1.png",
-        "icons/lai-todo-128-v1@2x.png",
-        "icons/lai-todo-128-v1@2x.icns",
-        "icons/lai-todo-32-v1.ico"
+        "icons/logo-24.png",
+        "icons/logo-24@2x.png",
+        "icons/logo-24@3x.png",
+        "icons/logo-36.png",
+        "icons/logo-36@2x.png",
+        "icons/logo-36@3x.png",
+        "icons/logo-128.png",
+        "icons/logo-128@2x.png",
+        "icons/logo-128@3x.png",
+        "icons/logo-512.icns",
+        "icons/logo-512.ico"
       ],
       "identifier": "com.lai-todo.com",
       "longDescription": "",
@@ -72,7 +85,7 @@
         "minHeight": 500,
         "minWidth": 400,
         "resizable": true,
-        "title": "Lai Todo",
+        "title": "LAI TODO",
         "titleBarStyle": "Visible",
         "hiddenTitle": true
       }

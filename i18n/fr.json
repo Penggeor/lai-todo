@@ -51,7 +51,7 @@
     },
     "scheduleMinTime": "Le temps minimum est de 5 secondes.",
     "about": {
-      "madeby": "Développé par Imre Gera",
+      "madeby": "Développé par Pandy",
       "source": "Code source",
       "support": "Soutenir le projet",
       "share": "ou partagez l'application sur les réseaux sociaux :"
@@ -283,7 +283,7 @@
       "pages": {
         "0": {
           "text": "Jetez un coup d'œil sur la façon d'utiliser l'application efficacement.",
-          "title": "Bienvenue sur FocusTide !"
+          "title": "Bienvenue sur LAI TODO !"
         },
         "1": {
           "text": "Travaillez ou faites une pause jusqu'à la fin du temps imparti. \nEnsuite, passez au prochain minuteur.",
@@ -298,7 +298,7 @@
           "title": "Restez flexible"
         },
         "support": {
-          "text": "Si ce projet vous a aidé, pensez à offrir un café à l'auteur. Vous retrouverez le boutton pour supporter l'auteur dans le menu \"À propos\".",
+          "text": "Si ce projet vous a été utile, veuillez envisager de lui donner une étoile sur GitHub.",
           "title": "Soutenir le projet"
         }
       },

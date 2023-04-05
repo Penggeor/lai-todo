@@ -55,10 +55,10 @@
     },
     "scheduleMinTime": "The minimum allowed time is 5 seconds",
     "about": {
-      "madeby": "Made by Imre Gera",
+      "madeby": "Made by Pandy",
       "source": "Source code",
       "support": "Support the project",
-      "supportBody": "I develop FocusTide in my free time. It would mean a lot to me if you could help me keep working on it!",
+      "supportBody": "I develop LAI TODO in my free time. It would mean a lot to me if you could help me keep working on it!",
       "mobileSupport": "Due to the rules enforced by the Google Play Store, I cannot show you any links inside the mobile app to donate to the project.",
       "share": "or share the app on social media:"
     },
@@ -300,7 +300,7 @@
     "onboarding": {
       "pages": {
         "0": {
-          "title": "Welcome to FocusTide!",
+          "title": "Welcome to LAI TODO!",
           "onboarding_invite": "Let's set you up for the first time. You can change everything in the settings menu later.",
           "heading": "Choose your language"
         },
@@ -332,7 +332,7 @@
         },
         "support": {
           "heading": "Support the project",
-          "text": "If this project has helped you, consider buying the author a coffee.",
+          "text": "If this project has been helpful to you, please consider giving it a Star on GitHub.",
           "hint": "You can also find support options in the Settings > About page."
         }
       },

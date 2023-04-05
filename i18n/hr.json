@@ -55,10 +55,10 @@
     },
     "scheduleMinTime": "Najkraće dozvoljeno vrijeme je 5 sekundi",
     "about": {
-      "madeby": "Autor: Imre Gera",
+      "madeby": "Autor: Pandy",
       "source": "Izvorni kod",
       "support": "Podrži projekt",
-      "supportBody": "FocusTide razvijam u slobodno vrijeme. Puno bi mi značilo kad bi mi pomogao/la nastaviti rad na programu!",
+      "supportBody": "LAI TODO razvijam u slobodno vrijeme. Puno bi mi značilo kad bi mi pomogao/la nastaviti rad na programu!",
       "mobileSupport": "Zbog pravila koja provodi Google Play Store, ne mogu pokazati poveznice unutar mobilnog programa za doniranje projektu.",
       "share": "ili dijeli program na društvenim mrežama:"
     },
@@ -300,7 +300,7 @@
     "onboarding": {
       "pages": {
         "0": {
-          "title": "Dobro došao, dobro došla u FocusTide!",
+          "title": "Dobro došao, dobro došla u LAI TODO!",
           "onboarding_invite": "Postavimo opcije za prvo pokretanje. Kasnije ih sve možeš promijeniti u postavkama.",
           "heading": "Odaberi jezik"
         },
@@ -332,7 +332,7 @@
         },
         "support": {
           "heading": "Podrži projekt",
-          "text": "Ako ti je ovaj projekt pomogao, kupi autoru kavu.",
+          "text": "Ako vam je ovaj projekt pomogao, razmislite o davanju zvjezdice na GitHubu.",
           "hint": "Opcije podrške možeš pronaći na stranici „Informacije” u postavkama."
         }
       },

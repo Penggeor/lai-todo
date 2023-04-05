@@ -2,6 +2,7 @@
 import { Component, PropType } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { BrandGithubIcon as GitHub, CoffeeIcon as Coffee } from 'vue-tabler-icons'
+import { open } from '@tauri-apps/api/shell'
 
 const { t } = useI18n()
 
@@ -63,8 +64,12 @@ const props = defineProps({
 </script>
 
 <template>
-  <a :href="config[props.type].url + props.utmTags" :class="['rounded-full flex flex-row items-center transition-colors', { 'px-3 py-2 space-x-1': defaultClasses, 'bg-black hover:bg-gray-700 active:bg-gray-800 text-white': defaultColours && type === 'github', 'bg-yellow-300 hover:bg-yellow-200 active:bg-yellow-400 text-black': defaultColours && type === 'support' }]">
+  <!-- <a target="_blank" :href="config[props.type].url + props.utmTags" :class="['rounded-full flex flex-row items-center transition-colors', { 'px-3 py-2 space-x-1': defaultClasses, 'bg-black hover:bg-gray-700 active:bg-gray-800 text-white': defaultColours && type === 'github', 'bg-yellow-300 hover:bg-yellow-200 active:bg-yellow-400 text-black': defaultColours && type === 'support' }]">
     <component :is="config[props.type].icon" :size="props.iconSize" />
     <span v-if="props.showText" v-text="config[props.type].text" />
-  </a>
+  </a> -->
+  <button @click="open(config[props.type].url + props.utmTags)">
+    <component :is="config[props.type].icon" :size="props.iconSize" />
+    <span v-if="props.showText" v-text="config[props.type].text" />
+  </button>
 </template>

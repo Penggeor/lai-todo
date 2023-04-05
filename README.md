@@ -4,7 +4,7 @@
 
 一款免费、现代和开源的计时器 Mac 桌面端应用。
 
-[![](https://img.shields.io/badge/%E9%93%BE%E6%8E%A5-%E7%82%B9%E6%88%91%E4%B8%8B%E8%BD%BD-brightgreen)](https://oss.lafyun.com/iemwd3-app/Lai%20Todo_0.1.0_aarch64.dmg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=WKIIB9JJ54H604R8DQ7P%2F20230219%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230219T131932Z&X-Amz-Expires=900&X-Amz-Security-Token=eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3NLZXkiOiJXS0lJQjlKSjU0SDYwNFI4RFE3UCIsImV4cCI6MTY3Njg5OTE3MiwicGFyZW50IjoiaWVtd2QzIiwic2Vzc2lvblBvbGljeSI6ImV5SldaWEp6YVc5dUlqb2lNakF4TWkweE1DMHhOeUlzSWxOMFlYUmxiV1Z1ZENJNlczc2lVMmxrSWpvaVlYQndMWE4wY3kxbWRXeHNMV2R5WVc1MElpd2lSV1ptWldOMElqb2lRV3hzYjNjaUxDSkJZM1JwYjI0aU9pSnpNem9xSWl3aVVtVnpiM1Z5WTJVaU9pSmhjbTQ2WVhkek9uTXpPam82S2lKOVhYMD0ifQ.iVAx0shFo9G9pTGxDpP1WEQ8YYAF9i2MJu0GdqCo3zVRrXoNQUDIhaSnQq4Vm-qBO_xpaJ-Pi4fdqhav6GOn9w&X-Amz-Signature=8c7cd7660610fd8391209e5bd0e7c9fc8ce438560ce45216dbd37413e1aa04c2&X-Amz-SignedHeaders=host)
+[![](https://img.shields.io/badge/%E9%93%BE%E6%8E%A5-%E7%82%B9%E6%88%91%E4%B8%8B%E8%BD%BD-brightgreen)](https://github.com/Penggeor/lai-todo/releases/download/1.0.0/LAI.TODO_0.1.0_aarch64.dmg)
 
 ![显示工作部分的应用程序屏幕截图。](./public/assets/img/ProductImg_Default.png)
 
@@ -115,4 +115,4 @@ $ yarn tauri:build
 
 ## ☕ 支持项目
 
-如果您喜欢这个项目或者对您有帮助，请考虑 star🌟。 使用该应用程序时，您不会因为这样做而烦恼！
+如果您喜欢这个项目或者对您有帮助，请考虑 Star 🌟。 使用该应用程序时，您不会因为这样做而烦恼！

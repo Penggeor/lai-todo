@@ -1,5 +1,6 @@
 <script setup lang="ts"> // eslint-disable-line vue/multi-word-component-names
 import { useI18n } from 'vue-i18n'
+import { appWindow } from '@tauri-apps/api/window'
 import SettingsPanel from '@/components/settings/settingsPanel.vue'
 import TodoList from '~~/components/todoList/todoList.vue'
 import { useOpenPanels } from '~~/stores/openpanels'
@@ -17,10 +18,14 @@ useHead(() => {
     htmlAttrs: { lang: locale }
   }
 })
+
+function drag () {
+  appWindow.startDragging()
+}
 </script>
 
 <template>
-  <div class="relative w-screen h-screen">
+  <div class="relative w-screen h-screen" @mousedown="drag">
     <transition enter-from-class="opacity-0" enter-active-class="transition duration-300" leave-to-class="opacity-0" leave-active-class="transition">
       <!-- Darkening overlay -->
       <div v-show="openPanels.settings" class="fixed z-40 w-screen h-screen bg-black bg-opacity-40" />

@@ -54,7 +54,7 @@
       "madeby": "Hecho por Pandy",
       "source": "Código fuente",
       "support": "Apoye el proyecto",
-      "supportBody": "Desarrollo LAI TODO en mi tiempo libre. ¡Significaría mucho para mí si pudiera ayudarme a seguir trabajando en él!",
+      "supportBody": "Desarrollo Lazy Pomodoro en mi tiempo libre. ¡Significaría mucho para mí si pudiera ayudarme a seguir trabajando en él!",
       "mobileSupport": "Debido a las reglas impuestas por la Google Play Store, no puedo mostrarle ningún enlace dentro de la aplicación móvil para donar al proyecto.",
       "share": "o comparta la aplicación en redes sociales:"
     },
@@ -296,7 +296,7 @@
     "onboarding": {
       "pages": {
         "0": {
-          "title": "¡Bienvenido/a LAI TODO!",
+          "title": "¡Bienvenido/a Lazy Pomodoro!",
           "text": "Eche un vistazo a cómo utilizar la aplicación de forma eficaz."
         },
         "1": {

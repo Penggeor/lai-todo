@@ -46,7 +46,7 @@ const state = reactive({
           :theme="ButtonTheme.Secondary"
           class="flex-grow w-full"
           @click="() => {
-            open('https://github.com/Penggeor/lai-todo')
+            open('https://github.com/Penggeor/lazy-pomodoro')
             $emit('close')
           }"
         >

@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "LAI TODO",
+    "productName": "懒番茄",
     "version": "0.1.0"
   },
   "tauri": {
@@ -53,7 +53,7 @@
         "icons/logo-512.icns",
         "icons/logo-512.ico"
       ],
-      "identifier": "com.lai-todo.com",
+      "identifier": "com.lazy-pomodoro.penggeor.com",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -80,13 +80,13 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
-        "width": 800,
+        "height": 500,
+        "width": 400,
         "minHeight": 500,
         "minWidth": 400,
         "resizable": true,
-        "title": "LAI TODO",
-        "titleBarStyle": "Visible",
+        "title": "Lazy Pomodoro",
+        "titleBarStyle": "Overlay",
         "hiddenTitle": true
       }
     ]

@@ -109,6 +109,7 @@ const progressBarSchedules = computed(() => {
       }"
     >
       <AppBar />
+
       <TimerSwitch
         key="timerswitch"
         :time-elapsed="scheduleStore.getCurrentItem.timeElapsed"
@@ -121,9 +122,7 @@ const progressBarSchedules = computed(() => {
 
       <TimerControls class="mb-8" />
     </div>
-    <client-only>
-      <TutorialView />
-    </client-only>
+    <TutorialView />
   </section>
 </template>
 

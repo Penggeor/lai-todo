@@ -7,84 +7,84 @@ import { languages } from '~~/plugins/i18n'
 export enum TimerType {
   Traditional = 'traditional',
   Approximate = 'approximate',
-  Percentage = 'percentage'
+  Percentage = 'percentage',
 }
 
 export enum SoundSet {
-  Musical = 'musical'
+  Musical = 'musical',
 }
 
 export enum Section {
   work = 'work',
   shortpause = 'shortpause',
-  longpause = 'longpause'
+  longpause = 'longpause',
 }
 
 export interface Settings {
-  _updated: boolean,
-  lang: string,
+  _updated: boolean;
+  lang: string;
   visuals: {
     theme: {
-      work: number[],
-      shortpause: number[],
-      longpause: number[]
-    },
-    darkMode: boolean
-    },
-    performance: {
-      showProgressBar: boolean
-    },
-    schedule: {
-      lengths: {
-        work: number,
-        shortpause: number,
-        longpause: number
-      },
-      longPauseInterval: number, // every 3rd pause is a long one,
-      autoStartNextTimer: {
-        wait: number,
-        autostart: boolean
-      },
-      numScheduleEntries: number,
-      visibility: {
-        enabled: boolean,
-        showSectionType: boolean
-      }
-    },
-    eventLoggingEnabled: boolean,
-    currentTimer: TimerType,
-    adaptiveTicking: {
-      enabled: boolean,
-      baseTickRate: number,
-      registeredHidden: boolean | null
-    },
-    permissions: {
-      notifications: boolean | null,
-      audio: boolean
-    },
-    audio: {
-      volume: number,
-      repeatTimes: number,
-      soundSet: SoundSet
-    },
-    timerControls: {
-      enableKeyboardShortcuts: boolean
-    },
-    tasks: {
-      enabled: boolean,
-      maxActiveTasks: number,
-      removeCompletedTasks: boolean
-    },
-    pageTitle: {
-      useTickEmoji: boolean
-    },
-    mobile: {
-      notifications: {
-        sectionOver: true,
-        persistent: boolean
-      }
-    },
-    reset: boolean
+      work: number[];
+      shortpause: number[];
+      longpause: number[];
+    };
+    darkMode: boolean;
+  };
+  performance: {
+    showProgressBar: boolean;
+  };
+  schedule: {
+    lengths: {
+      work: number;
+      shortpause: number;
+      longpause: number;
+    };
+    longPauseInterval: number; // every 3rd pause is a long one,
+    autoStartNextTimer: {
+      wait: number;
+      autostart: boolean;
+    };
+    numScheduleEntries: number;
+    visibility: {
+      enabled: boolean;
+      showSectionType: boolean;
+    };
+  };
+  eventLoggingEnabled: boolean;
+  currentTimer: TimerType;
+  adaptiveTicking: {
+    enabled: boolean;
+    baseTickRate: number;
+    registeredHidden: boolean | null;
+  };
+  permissions: {
+    notifications: boolean | null;
+    audio: boolean;
+  };
+  audio: {
+    volume: number;
+    repeatTimes: number;
+    soundSet: SoundSet;
+  };
+  timerControls: {
+    enableKeyboardShortcuts: boolean;
+  };
+  tasks: {
+    enabled: boolean;
+    maxActiveTasks: number;
+    removeCompletedTasks: boolean;
+  };
+  pageTitle: {
+    useTickEmoji: boolean;
+  };
+  mobile: {
+    notifications: {
+      sectionOver: true;
+      persistent: boolean;
+    };
+  };
+  reset: boolean;
 }
 
 export enum ColorMethod {
@@ -92,24 +92,31 @@ export enum ColorMethod {
   classic,
 
   /** `r g b` */
-  modern
+  modern,
 }
 
 export const AvailableSoundSets = {
   SOUNDSET_MUSICAL: 'musical'
 }
 
-const getDefaultLocale = () : string => {
-  if (process.server || !window || !window.navigator || !window.navigator.language) {
-    return 'en'
+const getDefaultLocale = (): string => {
+  if (
+    process.server ||
+    !window ||
+    !window.navigator ||
+    !window.navigator.language
+  ) {
+    return 'zh'
   }
 
-  const consideredLanguages = Object.keys(languages).filter(lang => window.navigator.language.split('-')[0].includes(lang))
-  return consideredLanguages.length > 0 ? consideredLanguages[0] : 'en'
+  const consideredLanguages = Object.keys(languages).filter(lang =>
+    window.navigator.language.split('-')[0].includes(lang)
+  )
+  return consideredLanguages.length > 0 ? consideredLanguages[0] : 'zh'
 }
 
 export const useSettings = defineStore('settings', {
-  state: () : Settings => ({
+  state: (): Settings => ({
     _updated: false,
     lang: getDefaultLocale(),
     visuals: {
@@ -141,14 +148,14 @@ export const useSettings = defineStore('settings', {
       }
     },
     eventLoggingEnabled: false,
-    currentTimer: TimerType.Approximate,
+    currentTimer: TimerType.Traditional,
     adaptiveTicking: {
       enabled: true,
       baseTickRate: 1000,
       registeredHidden: null
     },
     permissions: {
-      notifications: false,
+      notifications: true,
       audio: true
     },
     audio: {
@@ -179,7 +186,10 @@ export const useSettings = defineStore('settings', {
   getters: {
     getActiveSchedulePreset: (state) => {
       const index = Object.entries(timerPresets).findIndex(([_key, value]) => {
-        return JSON.stringify(value.lengths) === JSON.stringify(state.schedule.lengths)
+        return (
+          JSON.stringify(value.lengths) ===
+          JSON.stringify(state.schedule.lengths)
+        )
       })
 
       if (index >= 0) {
@@ -190,14 +200,22 @@ export const useSettings = defineStore('settings', {
     },
 
     getAdaptiveTickRate: (state) => {
-      if (state.adaptiveTicking.enabled && state.adaptiveTicking.registeredHidden !== null) {
+      if (
+        state.adaptiveTicking.enabled &&
+        state.adaptiveTicking.registeredHidden !== null
+      ) {
         // fetch settings for the current timer style
         const timerSettings = TickMultipliers[state.currentTimer]
-        const tickVersion = state.adaptiveTicking.registeredHidden ? 'hidden' : 'visible'
+        const tickVersion = state.adaptiveTicking.registeredHidden
+          ? 'hidden'
+          : 'visible'
 
         // const tickBase = state.adaptiveTicking.registeredHidden ? state.adaptiveTicking.hiddenTickRate : state.adaptiveTicking.visibleTickRate
         const tickBase = state.adaptiveTicking.baseTickRate
-        const tickMultiplier = (timerSettings && timerSettings[tickVersion]) ? timerSettings[tickVersion] : 1.0
+        const tickMultiplier =
+          timerSettings && timerSettings[tickVersion]
+            ? timerSettings[tickVersion]
+            : 1.0
 
         return tickBase * tickMultiplier
       }
@@ -210,7 +228,10 @@ export const useSettings = defineStore('settings', {
     },
 
     getColor: (state) => {
-      return (color: keyof Settings['visuals']['theme'], method: ColorMethod = ColorMethod.classic): string => {
+      return (
+        color: keyof Settings['visuals']['theme'],
+        method: ColorMethod = ColorMethod.classic
+      ): string => {
         if (method === ColorMethod.classic) {
           return `rgb(${state.visuals.theme[color].join(',')})`
         } else {
@@ -224,7 +245,9 @@ export const useSettings = defineStore('settings', {
     // mutations
     registerNewHidden (newHidden = document.hidden) {
       this.adaptiveTicking.registeredHidden = newHidden
-      useEvents().recordEvent(newHidden === true ? EventType.FOCUS_LOST : EventType.FOCUS_GAIN)
+      useEvents().recordEvent(
+        newHidden === true ? EventType.FOCUS_LOST : EventType.FOCUS_GAIN
+      )
     },
 
     applyPreset (id: string) {

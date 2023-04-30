@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { CoffeeIcon, BrandGithubIcon, BrandTwitterIcon, BrandFacebookIcon, BrandRedditIcon } from 'vue-tabler-icons'
-import { open } from '@tauri-apps/api/shell'
 import { ButtonImportance } from '../base/types/button'
-import Button from '~~/components/base/uiButton.vue'
+import UiLinkButton from '../base/uiLinkButton.vue'
 import { AppPlatform } from '~~/platforms/platforms'
 import { useMain } from '~~/stores/main'
 
@@ -16,7 +15,7 @@ const mainStore = useMain()
     <img src="/favicon.svg" width="64" height="64" class="inline-block p-2 mb-1 bg-red-200 rounded-lg">
     <div>
       <div class="inline-block text-2xl font-bold">
-        LAI TODO
+        Lazy Pomodoro
       </div>
       <sup class="text-base" v-text="mainStore.version" />
     </div>
@@ -30,18 +29,18 @@ const mainStore = useMain()
 
       <!-- Support links -->
       <div class="flex flex-row flex-wrap justify-center gap-2 mt-3 text-center">
-        <Button
+        <UiLinkButton
           :importance="ButtonImportance.Filled"
           dark
           no-default-style
           no-content-theme
           inner-class="flex flex-row items-center gap-1 text-slate-50 text-gray-50"
           bg-class="bg-slate-900 dark:bg-slate-700"
-          @click="open('https://github.com/Penggeor/lai-todo')"
+          href="https://github.com/Penggeor/lazy-pomodoro"
         >
           <BrandGithubIcon />
           <span v-text="$t('settings.about.source')" />
-        </Button>
+        </UiLinkButton>
         <!-- <Button
           v-if="!isMobile"
           :importance="ButtonImportance.Filled"

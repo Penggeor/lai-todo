@@ -58,7 +58,7 @@
       "madeby": "由 Pandy 制作",
       "source": "源代码",
       "support": "支持项目",
-      "supportBody": "我在业余时间开发 LAI TODO。如果您能帮助我继续开发它，我会非常感激！",
+      "supportBody": "我在业余时间开发懒番茄。如果您能帮助我继续开发它，我会非常感激！",
       "mobileSupport": "由于 Google Play 商店的规定，我无法在手机应用中显示任何捐赠给项目的链接。",
       "share": "或在社交媒体上分享应用："
     },
@@ -300,7 +300,7 @@
     "onboarding": {
       "pages": {
         "0": {
-          "title": "欢迎来到 LAI TODO！",
+          "title": "欢迎来到「懒番茄」！",
           "onboarding_invite": "让我们首次为您设置。您以后可以在设置菜单中更改所有内容。",
           "heading": "选择您的语言"
         },

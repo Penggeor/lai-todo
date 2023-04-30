@@ -13,7 +13,7 @@ const settingsStore = useSettings()
 </script>
 
 <template>
-  <div class="flex flex-row items-center w-full gap-2 px-4 my-1 isolate h-14">
+  <div class="flex flex-row items-center w-full gap-2 px-4 my-1 isolate h-14 mt-4">
     <div v-show="settingsStore.schedule.visibility.enabled" class="flex-shrink-0 h-10 px-2 py-2 rounded-full bg-surface-dark dark:ring-1 ring-inset dark:ring-surface-ondark dark:ring-opacity-20 overflow-hidden">
       <ClientOnly>
         <ScheduleView />

@@ -58,7 +58,7 @@
       "madeby": "Autor: Pandy",
       "source": "Izvorni kod",
       "support": "Podrži projekt",
-      "supportBody": "LAI TODO razvijam u slobodno vrijeme. Puno bi mi značilo kad bi mi pomogao/la nastaviti rad na programu!",
+      "supportBody": "Lazy Pomodoro razvijam u slobodno vrijeme. Puno bi mi značilo kad bi mi pomogao/la nastaviti rad na programu!",
       "mobileSupport": "Zbog pravila koja provodi Google Play Store, ne mogu pokazati poveznice unutar mobilnog programa za doniranje projektu.",
       "share": "ili dijeli program na društvenim mrežama:"
     },
@@ -300,7 +300,7 @@
     "onboarding": {
       "pages": {
         "0": {
-          "title": "Dobro došao, dobro došla u LAI TODO!",
+          "title": "Dobro došao, dobro došla u Lazy Pomodoro!",
           "onboarding_invite": "Postavimo opcije za prvo pokretanje. Kasnije ih sve možeš promijeniti u postavkama.",
           "heading": "Odaberi jezik"
         },

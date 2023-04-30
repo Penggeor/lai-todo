@@ -58,7 +58,7 @@
       "madeby": "Made by Pandy",
       "source": "Source code",
       "support": "Support the project",
-      "supportBody": "I develop LAI TODO in my free time. It would mean a lot to me if you could help me keep working on it!",
+      "supportBody": "I develop Lazy Pomodoro in my free time. It would mean a lot to me if you could help me keep working on it!",
       "mobileSupport": "Due to the rules enforced by the Google Play Store, I cannot show you any links inside the mobile app to donate to the project.",
       "share": "or share the app on social media:"
     },
@@ -300,7 +300,7 @@
     "onboarding": {
       "pages": {
         "0": {
-          "title": "Welcome to LAI TODO!",
+          "title": "Welcome to Lazy Pomodoro!",
           "onboarding_invite": "Let's set you up for the first time. You can change everything in the settings menu later.",
           "heading": "Choose your language"
         },

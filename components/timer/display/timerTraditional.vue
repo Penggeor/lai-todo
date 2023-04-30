@@ -34,6 +34,7 @@ const timeLeftStructured = computed(() => {
   )
   return returnObject
 })
+
 </script>
 
 <template>
@@ -56,10 +57,10 @@ const timeLeftStructured = computed(() => {
         +
       </div>
       <div
-        v-for="key in timeLeftStructured.displayKeys"
-        :key="key"
+        v-for="(key, idx) in timeLeftStructured.displayKeys"
+        :key="`${key}-${idx}`"
         class="flex flex-row transition"
-        :class="{ 'font-bold': key === 'minutes', 'md:text-9xl md:self-start': key === 'seconds', 'md:mr-4': key === 'hours' }"
+        :class="{ [key]: true, [`${key}-${idx}`]: true, 'font-bold': key === 'minutes', 'md:text-9xl md:self-start': key === 'seconds', 'md:mr-4': key === 'hours' }"
       >
         <span
           v-for="(char, idx) in timeLeftStructured.num[key].toString().padStart(2, '0')"

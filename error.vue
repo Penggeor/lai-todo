@@ -5,6 +5,7 @@ import { ComputedRef } from 'vue'
 import type { Component } from 'vue'
 import { ActionType } from './components/error/types'
 import UiButton from './components/base/uiButton.vue'
+import UiLinkButton from './components/base/uiLinkButton.vue'
 import { ButtonImportance, ButtonTheme } from './components/base/types/button'
 import ActionBar from '~~/components/error/errorActionBar.vue'
 import { useSettings } from '~~/stores/settings'
@@ -185,18 +186,18 @@ const actionTypeToButtonStyle = (action: ActionType): ButtonStyleMapping => {
         <IconHome class="mr-1" />
         <div v-text="$t('errorpage.action.home')" />
       </UiButton>
-      <UiButton link :data-row="recommendedActions.githubIssue" v-bind="actionTypeToButtonStyle(recommendedActions.githubIssue)" href="https://github.com/Hanziness/FocusTide/issues?utm_source=AnotherPomodor&utm_medium=web&utm_content=error">
+      <UiLinkButton link :data-row="recommendedActions.githubIssue" v-bind="actionTypeToButtonStyle(recommendedActions.githubIssue)" href="https://github.com/Penggeor/lazy-pomodoro/issues?utm_source=LazyPomodoro&=app&utm_content=error">
         <IconGithub class="mr-1" />
         <div v-text="$t('errorpage.action.githubIssue')" />
-      </UiButton>
-      <UiButton link :data-row="recommendedActions.githubDiscussion" v-bind="actionTypeToButtonStyle(recommendedActions.githubDiscussion)" href="https://github.com/Hanziness/FocusTide/discussions?utm_source=AnotherPomodor&utm_medium=web&utm_content=error">
+      </UiLinkButton>
+      <UiLinkButton link :data-row="recommendedActions.githubDiscussion" v-bind="actionTypeToButtonStyle(recommendedActions.githubDiscussion)" href="https://github.com/Penggeor/lazy-pomodoro/discussions?utm_source=AnotherPomodor&utm_medium=web&utm_content=error">
         <IconDiscussion class="mr-1" />
         <div v-text="$t('errorpage.action.githubDiscussion')" />
-      </UiButton>
-      <UiButton link :data-row="recommendedActions.twitter" v-bind="actionTypeToButtonStyle(recommendedActions.home)" href="https://twitter.com/FocusTide?utm_source=AnotherPomodor&utm_medium=web&utm_content=error">
+      </UiLinkButton>
+      <!-- <UiButton link :data-row="recommendedActions.twitter" v-bind="actionTypeToButtonStyle(recommendedActions.home)" href="https://twitter.com/FocusTide?utm_source=AnotherPomodor&utm_medium=web&utm_content=error">
         <IconTwitter class="mr-1" />
         <div v-text="$t('errorpage.action.twitter')" />
-      </UiButton>
+      </UiButton> -->
     </ActionBar>
   </div>
 </template>

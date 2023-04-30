@@ -1,6 +1,6 @@
 [![zh](https://img.shields.io/badge/lang-zh-red.svg)](./README.md)
 
-# ⏳ LAI TODO
+# ⏳ Lazy Pomodoro
 
 Free, modern and open-source timer application, right in your Mac.
 
@@ -10,7 +10,7 @@ Free, modern and open-source timer application, right in your Mac.
 
 ## What is it?
 
-_Lai Todo_ is a Pomodoro timer application running in the browser. It helps you manage your time so that you can do more work instead of watching videos of cute cats 😿
+_Lazy Pomodoro_ is a Pomodoro timer application running in the client. It helps you manage your time so that you can do more work instead of watching videos of cute cats 😿
 
 ## What you get
 
